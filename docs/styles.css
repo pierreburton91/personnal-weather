@@ -1,0 +1,210 @@
+/* CSS document */
+html {
+	height: 100%;
+}
+body {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	cursor: default;
+}
+h1 {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 100px;
+	color: rgba(0,0,0,0.3);
+}
+.container {
+	display: block;
+	width: 450px;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: calc(50% - 300px);
+	left: calc(50% - 225px);
+	background-color: #212121;
+	box-shadow: -10px 20px 35px rgba(0,0,0,0.5);
+}
+.relative-fix {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.background {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.infos {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.top-bar {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.bottom-bar {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+.time {
+	display: inline-block;
+	float: right;
+	height: 18px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+.left {
+	display: block;
+	float: left;
+	width: 60%;
+	height: 100px;
+	padding: 20px 0 20px 20px;
+	box-sizing: border-box;
+}
+.place {
+	display: inline-block;
+	float: left;
+	font-size: 25px;
+	line-height: 30px;
+	color: #ffffff;
+	height: 30px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+.description {
+	display: inline-block;
+	float: left;
+	clear: both;
+	width: 100%;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+	height: 30px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+.description::first-letter {
+	text-transform: uppercase;
+}
+.right {
+	display: block;
+	float: left;
+	width: 40%;
+	padding: 20px 20px 20px 0;
+	box-sizing: border-box;
+	height: 100px;
+}
+.temperature {
+	display: inline-block;
+	float: left;
+	text-align: right;
+	font-size: 60px;
+	line-height: 50px;
+	width: 100%;
+	color: #ffffff;
+	height: 60px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+ul {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 15px 20px;
+	background-color: white;
+	border-bottom: 1px solid #EEEEEE;
+	box-sizing: border-box;
+}
+li:nth-child(3) {
+	border: none;
+}
+.label {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: left;
+	color: #666666;
+	font-size: 15px;
+	line-height: 15px;
+}
+.value {
+	display: inline-block;
+	float: right;
+	width: auto;
+	text-align: right;
+	color: #666666;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 700;
+}
+.deg {
+	display: inline-block;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	background-image: url(img/deg.svg);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.errorLog {
+	display: none;
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 100px);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.error {
+	font-size: 18px;
+    line-height: 20px;
+    color: #999999;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 768px) {
+.container {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: none;
+}
+}
