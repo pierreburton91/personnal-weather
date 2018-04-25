@@ -32,7 +32,7 @@ $(document).ready(function(e) {
 			$.ajax({ 
 			   type: "GET",
 			   dataType: "json",//jsonp
-			   url: "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&APPID=49141a2a067e3fce4eb9e8c29bafd28a",
+			   url: "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&APPID=49141a2a067e3fce4eb9e8c29bafd28a",
 			   success: function(data){
 			      console.log(data);
 			     	if (data.cod == 404){
